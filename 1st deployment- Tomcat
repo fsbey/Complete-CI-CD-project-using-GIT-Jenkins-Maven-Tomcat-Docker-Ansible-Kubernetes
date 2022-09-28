@@ -38,6 +38,7 @@ Integrate Maven with Jenkins
 -Install maven plugin
 -Configure Maven and Java
 
+-Running build job
 
 -Setup & Configure Maven and Git
 -Setup Tomcat server
