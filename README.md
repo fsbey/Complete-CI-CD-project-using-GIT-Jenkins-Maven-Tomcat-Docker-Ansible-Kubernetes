@@ -6,11 +6,17 @@ Creating a complete CI/CD pipeline to build and deploy a java application
 I will use:
 
 -Git- Local version control system
+
 -GitHub-Distributed version control system 
+
 -Jenkins-CI tool
+
 -Maven- Build tool
+
 -Ansible- Configuration management and deployment tool
+
 -Docker- Containerisation
+
 -Kubernetes- Containerisation tool
 
 1. Code will be committed from the local VCS to the distributed VCS 
