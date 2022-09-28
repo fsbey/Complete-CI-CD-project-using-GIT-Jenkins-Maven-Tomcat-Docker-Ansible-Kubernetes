@@ -10,4 +10,9 @@ CI/CD with GitHub, Jenkins, Maven, Ansible and K8's
 
 -CI/CD job to nuild code on ansible and deploy it on K8's
 
-1. 
+1. Commit code onto GitHub 
+2. jenkins and maven pulls and builds the code 
+3. Unlike the 2nd deployment, Ansible will create the artifacts instead of Maven
+4. Ansible will use the artifacts to create and push an image to dockerhub
+5. Following ansible commands, K8's cluster will then be instructed to pull the image from docker hub and deploy a container.
+
