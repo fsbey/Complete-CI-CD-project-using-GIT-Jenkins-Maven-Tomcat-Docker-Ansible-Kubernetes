@@ -2,7 +2,23 @@ As mentioned in the README.md file, there will be 3 deployments.
 This is the first one
 
 These are the steps:
--Setup Jenkins
+-Create a free AWS account
+-Create EC2 instance 
+-Amazon Linux 2
+-t2.micro
+-SG
+-8Gib storage
+-Tagged as JenkinsServer
+-Assigned MyKp.pem to the server in order to login remotely
+-I created a folder locally to house all the key pairs I am going to use.
+-Login via my terminal using my jenkins server ip address and MyKP
+
+-Setup Jenkins:
+-Install Java
+-Install Jenkins
+-Start Jenkins
+-Access Web UI on port 8080
+
 -Setup & Configure Maven and Git
 -Setup Tomcat server
 -Integrating GitHub, Maven, Tomcat Server with Jenkins
