@@ -1,0 +1,15 @@
+As mentioned in the README.md file, there will be 3 deployments.
+This is the first one
+
+These are the steps:
+-Setup Jenkins
+-Setup & Configure Maven and Git
+-Setup Tomcat server
+-Integrating GitHub, Maven, Tomcat Server with Jenkins
+-Create a CI/CD job
+-Test the deployment
+
+1. Commit code onto GitHub 
+2. jenkins pulls the code 
+3. Then jenkins enables Maven to build the code into an artifact
+4. The artifact will then be deployed onto the tomcat server
