@@ -1,0 +1,13 @@
+2nd Deployment with GitHub, Jenkins, Maven and Docker
+
+- Setup of Docker environment 
+
+- Write Dockerfile
+
+- Create an image and container on docker host
+
+- Integrate docker host with Jenkins
+
+- Create CI/CD job on Jenkins to build and deploy on a container
+
+1. 
