@@ -14,6 +14,7 @@ These are the steps:
 -Login via my terminal using my jenkins server ip address and MyKP
 
 -Setup Jenkins:
+-Make sure you're root before you make any installations
 -Install Java
 -Install Jenkins
 -Start Jenkins
