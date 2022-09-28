@@ -12,4 +12,8 @@ CI/CD with GitHub, Jenkins, Maven, Ansible and Docker
 
 -CI/CD job to build code on ansible and deploy it on docker container
 
-1. 
+1. Commit code onto GitHub 
+2. jenkins and maven pulls and builds the code 
+3. Unlike the 2nd deployment, Ansible will create the artifacts instead of Maven
+4. Ansible will use the artifacts to create and push an image to dockerhub
+5. Following ansible commands, Docker server will then be instructed to pull the image from docker hub and deploy a container.
