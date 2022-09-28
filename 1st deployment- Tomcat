@@ -15,16 +15,35 @@ These are the steps:
 
 -Setup Jenkins:
 -Make sure you're root before you make any installations
+-Install epel packages using :amazon-linux-extras install epel" command(will allow you to install packages for commonly used software)
 -Install Java
 -Install Jenkins
 -Start Jenkins
+-Check the jenkins status and start
 -Access Web UI on port 8080
+-Copy password from given directory path and insert it into UI
+-Jenkins server is READY
+
+Integrate GitHub with Jenkins
+- Integrate Git on Jenkins instance 
+-Install GitHub Plugin on jenkins GUI
+-Configure Git on Jenkins GUI
+-Cloned hello-world repo with java file inside 
+-Created jenkins job to pull the code from that cloned github repo onto your jenkins server under /var/lib/jenkins/workspace/PullCodeFromGithub 
+workspace
+
+Integrate Maven with Jenkins
+-Setup Maven on Jenkins server
+-Setup Environment variables(JAVA_HOME, M2, M2_HOME)
+-Install maven plugin
+-Configure Maven and Java
+
 
 -Setup & Configure Maven and Git
 -Setup Tomcat server
 -Integrating GitHub, Maven, Tomcat Server with Jenkins
 -Create a CI/CD job
--Test the deployment
+-Test the deployment 
 
 1. Commit code onto GitHub 
 2. jenkins pulls the code 
