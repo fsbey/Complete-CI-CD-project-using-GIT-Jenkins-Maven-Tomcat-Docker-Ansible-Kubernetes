@@ -23,5 +23,6 @@ I will use:
 2. Code will then be built using CI tool Jenkins(via Maven)
 3. As a result of the build, artifacts will be deployed onto the target environment
 4. The tool that will enable us to do that is Ansible
-5. Ansible will initially deploy on a VM
-6. Then it will be deployed on a docker container, before being deployed on K8's 
+5. Ansible will initially deploy on a Tomcat server
+6. Then it will be deployed on a docker container 
+7. Before finally being deployed on K8's 
