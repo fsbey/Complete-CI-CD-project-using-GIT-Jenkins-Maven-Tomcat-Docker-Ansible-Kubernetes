@@ -1,0 +1,13 @@
+CI/CD with GitHub, Jenkins, Maven, Ansible and K8's
+
+-Setup Kubernetes (EKS)
+
+-Write pod, service and deployment manifest files
+
+-Integrate Kubernetes with Ansible 
+
+-Ansible playbooks to create deployment and service 
+
+-CI/CD job to nuild code on ansible and deploy it on K8's
+
+1. 
