@@ -10,4 +10,7 @@
 
 - Create CI/CD job on Jenkins to build and deploy on a container
 
-1. 
+1. Commit code onto GitHub 
+2. jenkins pulls the code 
+3. Then jenkins enables Maven to build the code into an artifact
+4. Then that artifact will be deployed on a Docker container
