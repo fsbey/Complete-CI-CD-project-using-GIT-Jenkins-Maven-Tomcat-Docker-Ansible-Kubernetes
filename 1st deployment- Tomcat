@@ -1,0 +1,16 @@
+STEPS
+
+SETUP AND CONFIGURE TOMCAT SERVER
+-setup linux ec2 instance(don't forget to configure SG and KP)
+-install java(amazon-linux-extras due to being on Linux)
+-configure tomcat
+-stop and start tomcat server ./shutdown.sh ./startup.sh
+-access tomcat web ui via PubIP:8090
+
+
+INTEGRATE TOMCAT WITH JENKINS
+-Install deploy to container plugin
+-Configure tomcat server with credentials
+THEN BUILD CODE ON JENKINS WITH THE HELP OF MAVEN AND DEPLOY IT ON TOMCAT SERVER
+-Configure local git on jenkins server so that you can make changes to the code locally 
+-Enable Poll SCM such that anytime you make a local change and commit that publicly it automatically triggers a new jenkins build
