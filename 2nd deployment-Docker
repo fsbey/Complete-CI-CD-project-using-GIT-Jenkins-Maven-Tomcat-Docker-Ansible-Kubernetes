@@ -1,8 +1,48 @@
 2nd Deployment with GitHub, Jenkins, Maven and Docker
 
-- Setup of Docker environment 
+SETUP OF DOCKER ENVIRONMENT
+-Setup Linux EC2 instance(Amazon Linux 2, t2.micro,SG,KP,tag-aside from that leave everything as is)
+-Install docker(yum install docker -y)
+-Start docker services
+-Understand basic docker commands(docker images, docker ps, docker ps -a etc)
 
-- Write Dockerfile
+CREATING A DOCKER CONTAINER
+To create a docker container, a docker image is required. After creating the docker image,
+simply use the docker run command.
+How to obtain a docker image? Two ways:
+1-From dockerhub, using docker pull command to take image onto our local system
+2-Creating our own dockerfile, which contains instructions for how your docker container should be constructed
+Use docker build command to create a docker image out of a Dockerfile
+
+-Writing 1st Dockerfile:
+FROM: to pull the base image
+RUN: To execute commands
+CMD: To provide defaults for an executing container
+ENTYPOINT: To configure a container that will run as an executable
+WORKDIR: Sets the working directory
+COPY: To copy a directory from local machine to the docker container
+ADD: copies files and folders from your local machine to docker containers
+EXPOSE: Informs Docker that the container listens on the specified network ports at runtime
+ENV: Sets environment variables
+
+Dockerfile instructions
+-Install tomcat on centos
+-Pull centos from docker hub-FROM
+-Install java-RUN
+-Create /opt/tomcat directory-RUN
+-Change work directory to /opt/tomcat-WORKDIR
+-Download tomcat packages-ADD/RUN
+-Extract tar.gz file-RUN
+-Rename to tomcat directory-RUN
+-Tell to docker that it runs on port 8080-EXPOSE
+-Start tomcat services-CMD
+
+encountered following issue when Dockerfile was executed: 
+Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist
+FIXED ERROR BY REFERRING TO STACK OVERFLOW AND INPUTTING THE FOLLOWING COMMANDS BEOFRE yum install java -y
+RUN cd /etc/yum.repos.d/
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
 - Create an image and container on docker host
 
