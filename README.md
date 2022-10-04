@@ -26,7 +26,7 @@ I will use:
 
 -Kubernetes- Containerisation tool
 
-1. Code will be committed from the local VCS to the distributed VCS 
+1. Code will be committed from the local version control system to the distributed version control system 
 2. Code will then be built using CI tool Jenkins(via Maven)
 3. As a result of the build, artifacts will be deployed onto the target environment
 4. The tool that will enable us to do that is Ansible
