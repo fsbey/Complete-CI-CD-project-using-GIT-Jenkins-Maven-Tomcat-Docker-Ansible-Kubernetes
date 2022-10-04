@@ -1,6 +1,8 @@
 CI/CD with GitHub, Jenkins, Maven, Ansible and K8's
 
--Setup Kubernetes (EKS)
+-Configure EC2 instance for which K8's will be used.
+
+-Install and setup Kubernetes (EKS)
 
 -Write pod, service and deployment manifest files
 
