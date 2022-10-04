@@ -1,8 +1,39 @@
 CI/CD with GitHub, Jenkins, Maven, Ansible and Docker
 
-- Setup Ansible Server 
+We will use Ansible as a deployment tool to relieve Jenkins of the administrative responsibility of deploying,
+Jenkins is more effective as a build tool.
+Jenkins will take the code from Github and build artifacts aand copy those artifacts onto an 
+Ansible server. 
+It is then Ansible's responsibility to create images from these artifacts and then deploy containers.
+Ansible will take the artifacts and with the help of a Dockerfile, it will create a docker image. 
 
-- Integrate Docker host with Ansible 
+STEPS
+SETUP ANSIBLE SERVER
+-Setup EC2 instance
+
+-Setup hostname
+
+-Create ansadmin user
+
+-Add user to sudoers files so ansadmin user can get sudo privileges
+
+-Generate ssh keys
+
+-Enable password based login
+
+-Install Ansible
+
+
+Integrate Docker host with Ansible 
+-On dockerhost 
+-create ansadmin
+-Add ansadmin to sudoers file 
+-Enable password based login
+
+On Ansible Server
+-Add to hosts file
+-Copy ssh keys
+-Test the connection
 
 - Ansible playbook to create image
 
